@@ -32,6 +32,7 @@ import {
   Settings,
   Moon,
   Sun,
+  User,
 } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
