@@ -14,13 +14,12 @@ import MyEvents from "./pages/MyEvents";
 import Notifications from "./pages/Notifications";
 import NotFound from "./pages/NotFound";
 
+// Create a new QueryClient instance
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
       <BrowserRouter>
         <Routes>
           {/* Public Routes */}
@@ -40,6 +39,8 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <Toaster />
+      <Sonner />
     </TooltipProvider>
   </QueryClientProvider>
 );
